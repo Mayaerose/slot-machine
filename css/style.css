@@ -1,0 +1,105 @@
+
+* {
+    box-sizing: border-box;
+}
+ 
+html {
+    font-size: 62.5%;
+}
+ 
+body {
+    font-size: 1.6rem;
+    color: #eb667c;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(181, 96, 120, 0.55)), url('../images/photo.png');
+    background-color:#fdf6f7;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 2rem 0;
+    margin: 0;
+}
+ 
+h1 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 2px 6px #352828;
+}
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(249, 247, 247, 0.812);
+}
+ 
+#moneyDisplay {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #44282d;
+}
+ 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+ 
+.reel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 10rem;
+    margin: 0 1rem;
+    border: 2px solid #44282d;
+    border-radius: 0.5rem;
+    background-color: #f4f4f4;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+ 
+.bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+ 
+.betButton {
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #44282d;
+    color: #ffffff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+ 
+#message {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 0 2px 6px #000000;
+}
+ 
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+    }
+ 
+    .reel {
+        width: 6rem;
+        height: 8rem;
+        font-size: 3rem;
+    }
+}
