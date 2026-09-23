@@ -1,8 +1,8 @@
 
-// how much money the player starts with
+
 let balance = 1000;
  
-// the symbols that can land on a reel
+
 const symbols = ["🍒", "🎰", "🤍", "⭐", "💕"];
  
 const maxButton = document.querySelector('#maxBet');
@@ -15,7 +15,7 @@ const reels = document.querySelectorAll('.reel');
  
 moneyDisplay.innerText = "Balance: $" + balance;
  
-// picks one random symbol out of the array
+
 function pickSymbol() {
 
     return symbols[Math.floor(Math.random() * symbols.length)];
@@ -45,12 +45,11 @@ function spin(bet) {
             message.innerText = "You lost.";
         }
  
-        // update the balance on screen after the spin is settled
         moneyDisplay.innerText = "Balance: $" + balance;
     }
 }
  
-// wait for a click, then run spin() with the right bet amount
+
 maxButton.addEventListener('click', function() {
     spin(50);
 });
